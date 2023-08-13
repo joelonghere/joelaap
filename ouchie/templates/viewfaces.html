@@ -1,0 +1,31 @@
+{% extends "maintemplate.html" %}
+{% block content %}
+<link rel="stylesheet" href="..\static\styles\joelsstyles.css" />
+<div class="buttoncontainer">
+  <div>
+    <div class="facedisplaycontainer">
+      <h1 class="center">Elderly</h1>
+      <div class="elderdisplay">
+          {% for i in elder%}
+          <a href="/ageid/selection?id={{i.id}}&final=False">
+          <img src="data:img/jpeg;base64,{{i.image}}">
+          </a>
+          {%endfor%}
+      </div>
+    </div>
+    <div class="facedisplaycontainer">
+      <h1 class="center">Non-Elderly</h1>
+      <div class="nonelderdisplay">
+        {% for i in nonelder%}
+        <a href="/ageid/selection?id={{i.id}}&final=True">
+        <img src="data:img/jpeg;base64,{{i.image}}">
+        </a>
+        {%endfor%}
+      </div>
+    </div>
+    <form>
+      <button type="submit" value="Submit" class="submitbutton" form="faceupload">next</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

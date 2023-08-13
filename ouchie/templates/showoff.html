@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block styles %}
+  <link href="{{ url_for('static', filename='styles/wow.css') }}" rel="stylesheet" />
+  {% endblock %}
+  </head>
+  <body>
+    <div style="padding: 20px;">
+      <div class="positive">
+          {% for i in elder%}
+          <a href="/showoff/add?id={{i.id}}&final=False">
+          <img src="data:img/jpeg;base64,{{i.image}}">
+          </a>
+          {%endfor%}
+      </div>
+      <div class="negative">
+        {% for i in nonelder%}
+        <a href="/showoff/add?id={{i.id}}&final=True">
+        <img src="data:img/jpeg;base64,{{i.image}}">
+        </a>
+        {%endfor%}
+      </div>
+    </div>
+    <a href="/funtimes" class="button">hehe wanna see my results?</a>
+  </body>
+</html>

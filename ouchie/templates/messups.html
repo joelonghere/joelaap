@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% block styles %}
+  <link href="{{ url_for('static', filename='styles/wow.css') }}" rel="stylesheet" />
+  {% endblock %}
+  </head>
+  <body>
+      <div class="mistakes">
+        {% for i in mistakes%}
+        <img src="data:img/jpeg;base64,{{i.image}}">
+        {%endfor%}
+      </div>
+  </body>
+</html>

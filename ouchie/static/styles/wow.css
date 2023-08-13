@@ -1,0 +1,25 @@
+.positive{
+    overflow-x: scroll;
+    background-color: green;
+    margin-left: 10%;
+    width: 145px;
+    height:600px;
+    float: left;
+}
+.negative{
+    overflow-x: scroll;
+    margin-right: 10%;
+    float: right;
+    background-color: red;
+    width: 145px;
+    height:600px;
+}
+.mistakes{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    margin-right: 10%;
+    float: right;
+    background-color: red;
+    width: 80%;
+    height:145px;
+}

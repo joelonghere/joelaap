@@ -1,0 +1,39 @@
+.center{
+    width: 50%;
+    text-align: center;
+    margin:auto;
+}
+.buttoncontainer{
+    padding-bottom: 50px;
+    position: relative;
+}
+.title{
+    font-size: 200%;
+    padding:30px 0 30px 0
+}
+.submitbutton{
+    padding:10px 20px 10px 20px;
+    position: absolute;
+    bottom:20px;
+    right: 30px;
+    background-color: green;
+}
+.elderdisplay{
+    width: 100%;
+    height: 145px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+.nonelderdisplay{
+    width: 100%;
+    height: 145px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 30px;
+}
+.facedisplaycontainer{
+    width: 80%;
+    margin:auto;
+}
